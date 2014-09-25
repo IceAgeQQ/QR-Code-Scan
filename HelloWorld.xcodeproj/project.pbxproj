@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B002FDAF19D34CB6009050B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B002FDAE19D34CB6009050B1 /* CoreGraphics.framework */; };
+		B002FDB119D34CC5009050B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B002FDB019D34CC5009050B1 /* Foundation.framework */; };
 		B006A6F219D0B0CE00E39C5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B006A6F119D0B0CE00E39C5F /* main.m */; };
 		B006A6F519D0B0CE00E39C5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B006A6F419D0B0CE00E39C5F /* AppDelegate.m */; };
 		B006A6F819D0B0CE00E39C5F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B006A6F719D0B0CE00E39C5F /* ViewController.m */; };
@@ -14,6 +16,7 @@
 		B006A6FD19D0B0CE00E39C5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B006A6FC19D0B0CE00E39C5F /* Images.xcassets */; };
 		B006A70019D0B0CE00E39C5F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B006A6FE19D0B0CE00E39C5F /* LaunchScreen.xib */; };
 		B006A70C19D0B0CE00E39C5F /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B006A70B19D0B0CE00E39C5F /* HelloWorldTests.m */; };
+		B01463C219D4713B00EA74DB /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B01463C119D4713B00EA74DB /* beep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B002FDAC19D34CAE009050B1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B002FDAE19D34CB6009050B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B002FDB019D34CC5009050B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B002FDB219D35258009050B1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B006A6EC19D0B0CE00E39C5F /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B006A6F019D0B0CE00E39C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B006A6F119D0B0CE00E39C5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +47,7 @@
 		B006A70519D0B0CE00E39C5F /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B006A70A19D0B0CE00E39C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B006A70B19D0B0CE00E39C5F /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		B01463C119D4713B00EA74DB /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beep.mp3; path = HelloWorldTests/beep.mp3; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B002FDB119D34CC5009050B1 /* Foundation.framework in Frameworks */,
+				B002FDAF19D34CB6009050B1 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +73,11 @@
 		B006A6E319D0B0CE00E39C5F = {
 			isa = PBXGroup;
 			children = (
+				B002FDB219D35258009050B1 /* PrefixHeader.pch */,
 				B006A6EE19D0B0CE00E39C5F /* HelloWorld */,
 				B006A70819D0B0CE00E39C5F /* HelloWorldTests */,
 				B006A6ED19D0B0CE00E39C5F /* Products */,
+				B01463C019D4586300EA74DB /* Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,7 @@
 		B006A6EF19D0B0CE00E39C5F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B01463C119D4713B00EA74DB /* beep.mp3 */,
 				B006A6F019D0B0CE00E39C5F /* Info.plist */,
 				B006A6F119D0B0CE00E39C5F /* main.m */,
 			);
@@ -117,6 +130,17 @@
 				B006A70A19D0B0CE00E39C5F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B01463C019D4586300EA74DB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B002FDB019D34CC5009050B1 /* Foundation.framework */,
+				B002FDAE19D34CB6009050B1 /* CoreGraphics.framework */,
+				B002FDAC19D34CAE009050B1 /* AVFoundation.framework */,
+			);
+			name = Source;
+			path = HelloWorld;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +225,7 @@
 			files = (
 				B006A6FB19D0B0CE00E39C5F /* Main.storyboard in Resources */,
 				B006A70019D0B0CE00E39C5F /* LaunchScreen.xib in Resources */,
+				B01463C219D4713B00EA74DB /* beep.mp3 in Resources */,
 				B006A6FD19D0B0CE00E39C5F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HelloWorld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HelloWorld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +439,7 @@
 				B006A71119D0B0CE00E39C5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B006A71219D0B0CE00E39C5F /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +448,7 @@
 				B006A71419D0B0CE00E39C5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
